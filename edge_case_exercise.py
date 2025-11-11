@@ -1,5 +1,5 @@
 def move(my_list, direction):
-
+ index_of_one = my_list.index(1)
     if direction == 'right':
         if my_list.index(1) <=2 :
          my_list[my_list.index(1)] = 0
