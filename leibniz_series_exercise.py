@@ -1,2 +1,7 @@
 def approximate_pi(n_terms):
-    pass # replace pass with your code
+    leibniz_series = []
+    for i in range(n_terms):
+        term = ((-1)**i) / (2 * i + 1)
+        leibniz_series.append(term)
+    pi = 4 * sum(leibniz_series)
+    return pi
